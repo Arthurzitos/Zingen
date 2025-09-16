@@ -9,7 +9,9 @@
     align-items: center;
     align-content: center;
     width: fit-content;
-    border-radius: .5rem;
+
+    border-radius: 0.5rem;
+
     font: var(--fw-md) var(--fs-base)/1.5rem var(--ff-sans);
     cursor: pointer;
 
@@ -19,7 +21,11 @@
 }
 
 .btn:hover {
-    --btn-bg-color: linear-gradient(90deg, var(--brand-color-secondary) 0¢, var(--brand-color-primary) 100%);
+    --btn-bg-color: linear-gradient(
+        90deg, 
+        var(--brand-color-secondary) 0%,
+        var(--brand-color-primary) 100%
+        );
     --btn-color: var(--surface-color);
 
     -webkit-background-clip: initial;
@@ -50,7 +56,7 @@
         content: "";
         position: absolute;
         border-radius: inherit;
-        inset: 1.5px;
+        inset: 1px;
         background-color: var(--bg-color);
     }
 
